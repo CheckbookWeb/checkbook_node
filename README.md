@@ -9,4 +9,4 @@ THIS PACKAGE IS UNDER DEVELOPMENT AND IT'S NOT READY TO BE USED IN PRODUCTION YE
 
 Install the package with:
 
-    npm install checkbook --save
+    npm install checkbook-api --save

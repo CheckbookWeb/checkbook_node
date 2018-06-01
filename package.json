@@ -1,0 +1,30 @@
+{
+  "name": "checkbook_node",
+  "version": "0.0.1",
+  "description": "Node.js library for the Checkbook API",
+  "keywords": [
+    "checkbook",
+    "digital checks",
+    "api"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "author": "Checkbook.io <support@checkbook.io> (https://checkbook.io/)",
+  "contributors": [
+    "Cosmin Molea <cmolea@checkbook.io>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheckbookWeb/checkbook_node.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CheckbookWeb/checkbook_node/issues"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "homepage": "https://github.com/CheckbookWeb/checkbook_node#readme"
+}

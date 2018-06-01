@@ -1,5 +1,5 @@
 {
-  "name": "checkbook_node",
+  "name": "checkbook",
   "version": "0.0.1",
   "description": "Node.js library for the Checkbook API",
   "keywords": [

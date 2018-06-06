@@ -23,6 +23,6 @@ The package needs to be configured with your account's API Key and API Secret:
     
 You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page:
 
-	![API Key and API Secret](docs/API Keys.png)
+![API Key and API Secret](docs/API Keys.png)
     
     

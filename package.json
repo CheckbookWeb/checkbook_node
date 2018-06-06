@@ -7,7 +7,7 @@
     "digital checks",
     "api"
   ],
-  "main": "lib/checkbook-api.js",
+  "main": "lib/checkbook.js",
   "scripts": {
     "test": "echo \"Error: no tests specified\" && exit 1"
   },

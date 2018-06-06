@@ -10,3 +10,13 @@ THIS PACKAGE IS UNDER DEVELOPMENT AND IT'S NOT READY TO BE USED IN PRODUCTION YE
 Install the package with:
 
     npm install checkbook-api --save
+    
+## Usage
+
+The package needs to be configured with your account's API Key and API Secret:
+
+    const CheckbookAPI = require('checkbook-api');
+    const Checkbook = new CheckbookAPI({
+        api_key: '14e0ba2448894d1288c7e62cc80fb329',
+        api_secret: 'ROD4evVLqy6i9ftIkKHeU1Yo44UdNB'
+    });

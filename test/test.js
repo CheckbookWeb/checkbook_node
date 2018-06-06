@@ -4,9 +4,10 @@ var Checkbook = new CheckbookAPI({
     api_secret: 'dXbCgzYBMibj8ZwuQMd2NXr6rtvjZ8'
 });
 
-Checkbook.getChecks({
+Checkbook.checks.list({
     page: 2,
-    per_page: 10
+    per_page: 10,
+    status: 'IN_PROCESS'
 }, function (error, response) {
     if (error) {
         console.log('Error:', error);

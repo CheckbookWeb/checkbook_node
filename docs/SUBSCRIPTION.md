@@ -1,0 +1,1 @@
+# Checkbook.subscriptions methods reference

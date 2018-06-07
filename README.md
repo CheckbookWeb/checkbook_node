@@ -66,7 +66,7 @@ Checkbook.checks.list({
 
 ## Methods reference
 
-The ```Checkbook``` class has several endpoints and you can find the detailed reference for the methods each one provide here:
+The ```Checkbook``` class has several endpoints and you can find the detailed reference for the methods each one provides here:
 
  * [Checkbook.checks](docs/CHECK.md)
  	* [list()](docs/CHECK.md)

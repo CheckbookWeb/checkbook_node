@@ -5,6 +5,9 @@ var Checkbook = new CheckbookAPI({
     env: 'test'
 });
 
+// Query the checks
+// https://checkbook.io/docs/api#get--v3-check
+/*
 Checkbook.checks.list({
     page: 2,
     per_page: 10,
@@ -16,3 +19,21 @@ Checkbook.checks.list({
         console.log(response);
     }
 });
+*/
+
+// Send a digital check with idempotency key
+// https://checkbook.io/docs/api#post--v3-check-digital
+/*
+Checkbook.checks.sendDigitalCheck({
+    name: 'Widgets Inc.',
+    recipient: 'widgets@example.com',
+    description: 'Test Send Check',
+    amount: 10.00
+}, function (error, response) {
+    if (error) {
+        console.log('Error:', error);
+    } else {
+        console.log(response);
+    }
+}, '123456789');
+*/

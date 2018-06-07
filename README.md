@@ -3,8 +3,6 @@
 The [Checkbook.io](https://checkbook.io/) Node library provides convenient access to the [Checkbook.io API](https://checkbook.io/docs/api) from
 applications written in server-side JavaScript.
 
-THIS PACKAGE IS UNDER DEVELOPMENT AND IT'S NOT READY TO BE USED IN PRODUCTION YET.
-
 ## Installation
 
 Install the package with:
@@ -65,6 +63,20 @@ Checkbook.checks.list({
     }
 });
 ```
+
+## Methods reference
+
+The ```Checkbook``` class has several endpoints and you can find the detailed reference for the methods each one provide here:
+
+ * [Checkbook.checks](docs/CHECK.md)
+ 	* [list()](docs/CHECK.md)
+ 	* [sendDigitalCheck()](docs/CHECK.md)
+ * [Checkbook.invoices](docs/INVOICE.md)
+ 	* [list()](docs/INVOICE.md)
+ * [Checkbook.subscriptions](docs/SUBSCRIPTION.md)
+ * [Checkbook.banks](docs/BANK.md)
+ * [Checkbook.users](docs/USER.md)
+ 
 
 ## Getting help
 

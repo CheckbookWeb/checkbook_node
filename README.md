@@ -66,17 +66,25 @@ Checkbook.checks.list({
 
 ## Methods reference
 
-The ```Checkbook``` class has several endpoints and you can find the detailed reference for the methods each one provides here:
+The ```Checkbook``` class has several endpoints and you can find below the methods each one provides.  
 
- * __Checkbook.checks__
+You can click on the [:blue_book:] icon to see code samples for a specific endpoint 
+or on the [:book:] icon to access the detailed API reference for each method. 
+
+
+ * __Checkbook.checks__ [:blue_book:](examples/check.js)
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-check)
- 	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` ([:book:](https://checkbook.io/docs/api#post--v3-check-digital))
- * __Checkbook.invoices]__
- 	* ```list(query, callback)``` ([:book:](https://checkbook.io/docs/api#get--v3-invoice))
- * __Checkbook.subscriptions__
- * __Checkbook.banks__
- 	* ```list(callback)``` ([:book:](https://checkbook.io/docs/api#get--v3-bank))
- * __Checkbook.users__
+ 	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-digital)
+ 	
+ * __Checkbook.invoices]__ [:blue_book:](examples/invoice.js)
+ 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice)
+ 	
+ * __Checkbook.subscriptions__ [:blue_book:](examples/subscription.js)
+ 
+ * __Checkbook.banks__ [:blue_book:](examples/bank.js)
+ 	* ```list(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank)
+ 	
+ * __Checkbook.users__ [:blue_book:](examples/user.js)
  
 
 ## Getting help

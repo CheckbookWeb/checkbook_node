@@ -5,7 +5,11 @@ var Checkbook = new CheckbookAPI({
     env: 'test'
 });
 
-// Get sent/received invoices
+
+/*
+Get sent/received invoices
+https://checkbook.io/docs/api#get--v3-invoice
+ */
 Checkbook.invoices.list({
     page: 2,
     per_page: 10,

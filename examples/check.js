@@ -5,8 +5,11 @@ var Checkbook = new CheckbookAPI({
     env: 'test'
 });
 
-// Get sent/received checks
-// https://checkbook.io/docs/api#get--v3-check
+
+/*
+Get sent/received checks
+https://checkbook.io/docs/api#get--v3-check
+ */
 /*
 Checkbook.checks.list({
     page: 2,
@@ -21,8 +24,11 @@ Checkbook.checks.list({
 });
 */
 
-// Create a digital check (with idempotency key)
-// https://checkbook.io/docs/api#post--v3-check-digital
+
+/*
+Create a digital check (with idempotency key)
+https://checkbook.io/docs/api#post--v3-check-digital
+ */
 /*
 Checkbook.checks.sendDigitalCheck({
     name: 'Widgets Inc.',

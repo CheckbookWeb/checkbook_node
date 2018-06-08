@@ -13,7 +13,7 @@ Install the package with:
 
 The package needs to be configured with your account's API Key and API Secret.
 
-:key: The API credentials below are from the ```test``` environment and you can use them to try out the API.
+:key: The API credentials below are from the ```test``` environment and you can use them to try the API.
 
 ``` js
 var CheckbookAPI = require('checkbook-api');
@@ -95,6 +95,10 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```list(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank)
  	
  * __Checkbook.users__
+ 	* ```createUser(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-user)
+ 	* ```updateUser(params, callback)``` [:book:](https://checkbook.io/docs/api#put--v3-user)
+ 	* ```sendVerificationCode(params, callback)```
+ 	* ```checkVerificationCode(params, callback)```
  
 ---
 

@@ -66,7 +66,7 @@ Checkbook.checks.list({
 });
 ```
 
-:star: You can find more [code samples here](examples).  
+:star: You can find more [code samples here](samples).  
 
 ## Methods reference
 

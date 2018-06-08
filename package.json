@@ -1,7 +1,7 @@
 {
   "name": "checkbook-api",
   "version": "3.0.0",
-  "description": "Node.js library for the Checkbook API",
+  "description": "Node.js library for the Checkbook.io API",
   "keywords": [
     "checkbook",
     "digital checks",

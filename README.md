@@ -1,7 +1,6 @@
-# Checkbook.io Node Library
+# Node.js library for the Checkbook.io API
 
-The [Checkbook.io](https://checkbook.io/) Node library provides convenient access to the [Checkbook.io API](https://checkbook.io/docs/api) from
-applications written in server-side JavaScript.
+This library provides convenient access to the [Checkbook.io API](https://checkbook.io/) from applications written in Node.js.
 
 ## Installation
 

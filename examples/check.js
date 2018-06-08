@@ -14,7 +14,7 @@ var Checkbook = new CheckbookAPI({
 Checkbook.checks.list({
     page: 2,
     per_page: 10,
-    status: 'IN_PROCESS'
+    status: 'UNPAID'
 }, function (error, response) {
     if (error) {
         console.log('Error:', error);

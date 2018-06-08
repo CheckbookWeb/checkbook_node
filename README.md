@@ -11,7 +11,9 @@ Install the package with:
     
 ## Configuration
 
-The package needs to be configured with your account's API Key and API Secret:
+The package needs to be configured with your account's API Key and API Secret.
+
+:key: The API credentials below are from the ```test``` environment so you can use them to try out the API.
 
 ``` js
 var CheckbookAPI = require('checkbook-api');
@@ -21,13 +23,11 @@ var Checkbook = new CheckbookAPI({
 	env: 'test'
 });
 ```
-
-:key: The code snippet has the actual API Key and API Secret from the ```test``` environment so you can use it directly.
     
 :bulb: The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
 The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
     
-You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page:
+You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page.
 
 ![API Key and API Secret](docs/API_Keys.png)
 
@@ -56,7 +56,7 @@ You can use the following code snippet to query the list of checks:
 Checkbook.checks.list({
     page: 2,
     per_page: 10,
-    status: 'IN_PROCESS'
+    status: 'UNPAID'
 }, function (error, response) {
     if (error) {
         console.log('Error:', error);
@@ -92,7 +92,17 @@ You can click on the :book: icon to access the detailed API reference for each m
  	
  * __Checkbook.users__
  
-
+:bulb: The ```query``` object used for the ```list``` methods can have the following attributes:  
+  * ```__start_date__ : 'yyyy-mm-dd'```  
+  * ```__end_date__   : 'yyyy-mm-dd'```  
+  * ```__direction__ : 'INCOMING'|'OUTGOING'```  
+  * ```__sort__: '+NUMBER'|'-NUMBER'|'+TYPE'|'-TYPE'|'+AMOUNT'|'-AMOUNT'|'+STATUS'|'-STATUS'|'+DATE'|'-DATE'|'+DESCRIPTION'|'-DESCRIPTION'```  
+  * ```__status__ : 'PAID'|'IN_PROCESS'|'UNPAID'|'VOID'|'EXPIRED'|'PRINTED'|'MAILED'|'FAILED'|'REFUNDED'```  
+  * ```__q__ : 'search query'```  
+  * ```__per_page__ : 10|25|50```    
+  * ```__page__ : [1..N]```  
+  * ```__type__ : 'CHECK'|'INVOICE'|'SUBSCRIPTION'```  
+ 
 ## Getting help
 
 If you need help installing or using the library, please contact Checkbook.io Support at support@checkbook.io.  

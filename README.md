@@ -66,6 +66,8 @@ Checkbook.checks.list({
 });
 ```
 
+:star: You can find more [code samples here](examples).  
+
 ## Methods reference
 
 The ```Checkbook``` class has several endpoints and you can find below the methods each one provides.  
@@ -121,7 +123,6 @@ If you've instead found a bug in the library or would like new features added, p
 
 ## More Information
 
- * [Code Samples](examples)
  * [API Endpoints](https://checkbook.io/docs/api#document-api_endpoints)
  * [Error Codes](https://checkbook.io/docs/api#document-error_codes)
  * [Idempotency](https://checkbook.io/docs/api#document-idempotent_requests)

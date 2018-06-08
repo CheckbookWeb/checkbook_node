@@ -105,12 +105,12 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```delete(bank_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-bank-(bank_id))
  	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank)
  	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank-iav)
- 	* ```verifyMicrodesposit(params, callback)``` [:book:](https://checkbook.io/docs/api#post--v3-bank-verify)
- 	* ```releaseMicrodesposit(params, callback)```
+ 	* ```verifyMicrodesposits(params, callback)``` [:book:](https://checkbook.io/docs/api#post--v3-bank-verify)
+ 	* ```releaseMicrodesposits(params, callback)```
  	
  * __Checkbook.users__
- 	* ```createUser(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-user)
- 	* ```updateUser(params, callback)``` [:book:](https://checkbook.io/docs/api#put--v3-user)
+ 	* ```create(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-user)
+ 	* ```update(params, callback)``` [:book:](https://checkbook.io/docs/api#put--v3-user)
  	* ```sendVerificationCode(params, callback)```
  	* ```checkVerificationCode(params, callback)```
  

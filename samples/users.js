@@ -11,7 +11,7 @@ var Checkbook = new CheckbookAPI({
  https://checkbook.io/docs/api#post--v3-user
  */
 /*
-Checkbook.users.createUser({
+Checkbook.users.create({
     name: 'New User',
     user_id: 'new_user@example.com'
 }, function (error, response) {
@@ -25,11 +25,11 @@ Checkbook.users.createUser({
 
 
 /*
- Create a new user (with idempotency key)
- https://checkbook.io/docs/api#post--v3-user
+ Update a user
+ https://checkbook.io/docs/api#put--v3-user
  */
 /*
-Checkbook.users.updateUser({
+Checkbook.users.update({
     user: {
         first_name: 'John',
         last_name: 'Smith'

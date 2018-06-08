@@ -1,1 +1,0 @@
-# Checkbook.users methods reference

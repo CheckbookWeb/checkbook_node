@@ -5,7 +5,7 @@ var Checkbook = new CheckbookAPI({
     env: 'test'
 });
 
-// Query the checks
+// Get sent/received checks
 // https://checkbook.io/docs/api#get--v3-check
 /*
 Checkbook.checks.list({
@@ -21,7 +21,7 @@ Checkbook.checks.list({
 });
 */
 
-// Send a digital check with idempotency key
+// Create a digital check (with idempotency key)
 // https://checkbook.io/docs/api#post--v3-check-digital
 /*
 Checkbook.checks.sendDigitalCheck({

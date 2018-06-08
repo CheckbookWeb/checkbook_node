@@ -1,1 +1,0 @@
-# Checkbook.banks methods reference

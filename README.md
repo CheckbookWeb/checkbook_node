@@ -27,7 +27,7 @@ The possible values for this parameter are ```test``` or ```sandbox``` and the A
     
 You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page:
 
-![API Key and API Secret](docs/images/API_Keys.png)
+![API Key and API Secret](docs/API_Keys.png)
 
 ## Usage
 
@@ -68,14 +68,15 @@ Checkbook.checks.list({
 
 The ```Checkbook``` class has several endpoints and you can find the detailed reference for the methods each one provides here:
 
- * [Checkbook.checks](docs/CHECK.md)
- 	* [list()](docs/CHECK.md)
- 	* [sendDigitalCheck()](docs/CHECK.md)
- * [Checkbook.invoices](docs/INVOICE.md)
- 	* [list()](docs/INVOICE.md)
- * [Checkbook.subscriptions](docs/SUBSCRIPTION.md)
- * [Checkbook.banks](docs/BANK.md)
- * [Checkbook.users](docs/USER.md)
+ * __Checkbook.checks__
+ 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-check)
+ 	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` ([:book:](https://checkbook.io/docs/api#post--v3-check-digital))
+ * __Checkbook.invoices]__
+ 	* ```list(query, callback)``` ([:book:](https://checkbook.io/docs/api#get--v3-invoice))
+ * __Checkbook.subscriptions__
+ * __Checkbook.banks__
+ 	* ```list(callback)``` ([:book:](https://checkbook.io/docs/api#get--v3-bank))
+ * __Checkbook.users__
  
 
 ## Getting help

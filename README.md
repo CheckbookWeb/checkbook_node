@@ -21,6 +21,8 @@ var Checkbook = new CheckbookAPI({
 	env: 'test'
 });
 ```
+
+:bulb: The code snippet has the actual API credentials from the ```test``` environment so you can use it directly.
     
 The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
 The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
@@ -68,23 +70,22 @@ Checkbook.checks.list({
 
 The ```Checkbook``` class has several endpoints and you can find below the methods each one provides.  
 
-You can click on the [:blue_book:] icon to see code samples for a specific endpoint 
-or on the [:book:] icon to access the detailed API reference for each method. 
+You can click on the :book: icon to access the detailed API reference for each method. 
 
 
- * __Checkbook.checks__ [:blue_book:](examples/check.js)
+ * __Checkbook.checks__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-check)
  	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-digital)
  	
- * __Checkbook.invoices]__ [:blue_book:](examples/invoice.js)
+ * __Checkbook.invoices]__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice)
  	
- * __Checkbook.subscriptions__ [:blue_book:](examples/subscription.js)
+ * __Checkbook.subscriptions__
  
- * __Checkbook.banks__ [:blue_book:](examples/bank.js)
+ * __Checkbook.banks__
  	* ```list(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank)
  	
- * __Checkbook.users__ [:blue_book:](examples/user.js)
+ * __Checkbook.users__
  
 
 ## Getting help
@@ -95,6 +96,7 @@ If you've instead found a bug in the library or would like new features added, p
 
 ## More Information
 
+ * [Code Samples](examples)
  * [API Endpoints](https://checkbook.io/docs/api#document-api_endpoints)
  * [Error Codes](https://checkbook.io/docs/api#document-error_codes)
  * [Idempotency](https://checkbook.io/docs/api#document-idempotent_requests)

@@ -7,8 +7,8 @@ var Checkbook = new CheckbookAPI({
 
 
 /*
-Get sent/received invoices
-https://checkbook.io/docs/api#get--v3-invoice
+ Get sent/received invoices
+ https://checkbook.io/docs/api#get--v3-invoice
  */
 Checkbook.invoices.list({
     page: 2,

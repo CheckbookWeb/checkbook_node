@@ -1,4 +1,4 @@
-# Checkbook.io Node.js Library
+# Checkbook.io Node Library
 
 The [Checkbook.io](https://checkbook.io/) Node library provides convenient access to the [Checkbook.io API](https://checkbook.io/docs/api) from
 applications written in server-side JavaScript.
@@ -22,9 +22,9 @@ var Checkbook = new CheckbookAPI({
 });
 ```
 
-:bulb: The code snippet has the actual API credentials from the ```test``` environment so you can use it directly.
+:key: The code snippet has the actual API Key and API Secret from the ```test``` environment so you can use it directly.
     
-The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
+:bulb: The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
 The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
     
 You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page:
@@ -72,10 +72,15 @@ The ```Checkbook``` class has several endpoints and you can find below the metho
 
 You can click on the :book: icon to access the detailed API reference for each method. 
 
-
  * __Checkbook.checks__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-check)
+ 	* ```get(check_id, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-check-(check_id))
+ 	* ```delete(check_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-check-(check_id))
  	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-digital)
+ 	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-physical)
+ 	* ```sendDirectDeposit(params, callback[, idempotencyKey])```
+ 	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
+ 	* ```convertDigitalToPhysical(params, callback)```
  	
  * __Checkbook.invoices]__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice)

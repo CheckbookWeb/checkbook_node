@@ -54,7 +54,7 @@ You can use the following code snippet to query the list of checks:
 
 ``` js
 Checkbook.checks.list({
-    page: 2,
+    page: 1,
     per_page: 10,
     status: 'UNPAID'
 }, function (error, response) {
@@ -82,8 +82,12 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
  	* ```convertDigitalToPhysical(params, callback)```
  	
- * __Checkbook.invoices]__
+ * __Checkbook.invoices__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice)
+ 	* ```get(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice-(invoice_id))
+	* ```delete(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-invoice-(invoice_id))
+	* ```sendInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-invoice)
+	* ```payInvoice(params, callback[, idempotencyKey])```
  	
  * __Checkbook.subscriptions__
  

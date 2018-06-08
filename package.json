@@ -1,11 +1,13 @@
 {
   "name": "checkbook-api",
-  "version": "0.0.1-beta2",
+  "version": "0.0.1-beta3",
   "description": "Node.js library for the Checkbook API",
   "keywords": [
     "checkbook",
     "digital checks",
-    "api"
+    "digital payments",
+    "api",
+    "ach"
   ],
   "main": "lib/checkbook.js",
   "scripts": {

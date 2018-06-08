@@ -12,7 +12,7 @@ var Checkbook = new CheckbookAPI({
  */
 /*
 Checkbook.checks.list({
-    page: 2,
+    page: 1,
     per_page: 10,
     status: 'UNPAID'
 }, function (error, response) {
@@ -72,6 +72,7 @@ Checkbook.checks.sendDigitalCheck({
         console.log('Response:', response);
     }
 });
+*/
 
 
 /*

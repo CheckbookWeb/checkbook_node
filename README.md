@@ -103,8 +103,8 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```list(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank)
  	* ```institutions(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank-institutions)
  	* ```delete(bank_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-bank-(bank_id))
- 	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank)
  	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank-iav)
+ 	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank)
  	* ```verifyMicrodesposits(params, callback)``` [:book:](https://checkbook.io/docs/api#post--v3-bank-verify)
  	* ```releaseMicrodesposits(params, callback)```
  	

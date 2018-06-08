@@ -24,8 +24,8 @@ var Checkbook = new CheckbookAPI({
 });
 ```
     
-> The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
-> The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
+The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
+The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
     
 You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page.
 
@@ -45,7 +45,7 @@ Checkbook.checks.sendDigitalCheck({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 ```
@@ -61,7 +61,7 @@ Checkbook.checks.list({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 ```
@@ -94,7 +94,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  
 ---
 
-:bulb: The ```query``` object used for the ```list``` methods can have the following attributes:  
+:bulb: The ```query``` object used for the ```list(query, callback)``` methods can have the following attributes:  
   * ```start_date : 'yyyy-mm-dd'```  
   * ```end_date   : 'yyyy-mm-dd'```  
   * ```direction : 'INCOMING'|'OUTGOING'```  

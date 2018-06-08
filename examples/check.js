@@ -19,7 +19,7 @@ Checkbook.checks.list({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */
@@ -34,7 +34,7 @@ Checkbook.checks.get('222e276dc9b548fda3faa7eacb56c655', function (error, respon
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */
@@ -49,7 +49,7 @@ Checkbook.checks.delete('222e276dc9b548fda3faa7eacb56c655', function (error, res
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */
@@ -69,7 +69,7 @@ Checkbook.checks.sendDigitalCheck({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 
@@ -88,7 +88,7 @@ Checkbook.checks.sendDigitalCheck({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 }, '123456789');
 */
@@ -114,7 +114,7 @@ Checkbook.checks.sendPhysicalCheck({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */
@@ -136,7 +136,7 @@ Checkbook.checks.sendDirectDeposit({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */
@@ -159,7 +159,7 @@ Checkbook.checks.convertDigitalToPhysical({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });
 */

@@ -18,6 +18,6 @@ Checkbook.invoices.list({
     if (error) {
         console.log('Error:', error);
     } else {
-        console.log(response);
+        console.log('Response:', response);
     }
 });

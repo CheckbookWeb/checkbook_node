@@ -92,6 +92,12 @@ You can click on the :book: icon to access the detailed API reference for each m
 	* ```payInvoice(params, callback[, idempotencyKey])```
  	
  * __Checkbook.subscriptions__
+ 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-subscription)
+	* ```get(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-subscription-(subscription_id))
+	* ```delete(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-subscription-(subscription_id))
+	* ```update(subscription_id, params, callback)``` [:book:](https://checkbook.io/docs/api#put--v3-subscription-(subscription_id))
+	* ```sendRecurringCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-subscription-check)
+	* ```sendRecurringInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-subscription-invoice)
  
  * __Checkbook.banks__
  	* ```list(callback)``` [:book:](https://checkbook.io/docs/api#get--v3-bank)

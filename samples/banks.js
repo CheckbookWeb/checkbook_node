@@ -70,21 +70,6 @@ Checkbook.banks.addBankAccount({
 */
 
 
-/*
- Releases the microdesposits for a bank account
- */
-/*
-Checkbook.banks.releaseMicrodesposits({
-    account: '387c3ae9103a45cabdae37f7513c04a6'
-}, function (error, response) {
-    if (error) {
-        console.log('Error:', error);
-    } else {
-        console.log('Response:', response);
-    }
-});
-*/
-
 
 /*
  Verify the microdeposits for a bank account

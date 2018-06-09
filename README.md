@@ -79,9 +79,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```delete(check_id, callback)``` [:book:](https://checkbook.io/docs/api#delete--v3-check-(check_id))
  	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-digital)
  	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-check-physical)
- 	* ```sendDirectDeposit(params, callback[, idempotencyKey])```
  	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
- 	* ```convertDigitalToPhysical(params, callback)```
  	
  * __Checkbook.invoices__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api#get--v3-invoice)
@@ -105,13 +103,10 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank-iav)
  	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-bank)
  	* ```verifyMicrodesposits(params, callback)``` [:book:](https://checkbook.io/docs/api#post--v3-bank-verify)
- 	* ```releaseMicrodesposits(params, callback)```
  	
  * __Checkbook.users__
  	* ```create(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api#post--v3-user)
  	* ```update(params, callback)``` [:book:](https://checkbook.io/docs/api#put--v3-user)
- 	* ```sendVerificationCode(params, callback)```
- 	* ```checkVerificationCode(params, callback)```
  
 ---
 

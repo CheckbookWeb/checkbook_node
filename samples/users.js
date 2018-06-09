@@ -45,36 +45,3 @@ Checkbook.users.update({
     }
 });
 */
-
-
-/*
- Send SMS verification code to user
- */
-/*
-Checkbook.users.sendVerificationCode({
-    phone: '1112223333',
-    type: 'sms'
-}, function (error, response) {
-    if (error) {
-        console.log('Error:', error);
-    } else {
-        console.log('Response:', response);
-    }
-});
-*/
-
-
-/*
- Check a given user's verification code
- */
-/*
-Checkbook.users.checkVerificationCode({
-    code: '123123'
-}, function (error, response) {
-    if (error) {
-        console.log('Error:', error);
-    } else {
-        console.log('Response:', response);
-    }
-});
-*/

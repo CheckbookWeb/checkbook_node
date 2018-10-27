@@ -30,6 +30,23 @@ You can get the API Key and API Secret values from the [Settings](https://checkb
 
 ![API Key and API Secret](docs/API_Keys.png)
 
+## OAuth
+
+If you wish to send requests on behalf of another user, this user will use OAuth in order to generate a key that may be used on their behalf.
+
+You can get more details on our [OAuth documentation page](https://checkbook.io/docs/api/products/#oauth).
+
+Once you obtain the bearer token for a user, you can use it to send API requests on its behalf:
+
+
+``` js
+var CheckbookAPI = require('checkbook-api');
+var Checkbook = new CheckbookAPI({
+	bearer: '3658db04db340ce57b35fde7a56f669be222d96e33219bf28409812d1ca364b5',
+	env: 'demo'
+});
+```
+    
 ## Usage
 
 You can use the following code snippet to send a digital check:

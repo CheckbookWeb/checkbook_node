@@ -32,9 +32,7 @@ You can get the API Key and API Secret values from the [Settings](https://checkb
 
 ## OAuth
 
-If you wish to send requests on behalf of another user, this user will use OAuth in order to generate a key that may be used on their behalf.
-
-You can get more details on our [OAuth documentation page](https://checkbook.io/docs/api/products/#oauth).
+If you wish to send requests on behalf of another user, this user will use OAuth in order to generate a key that may be used on their behalf. You can get more details on our [OAuth documentation page](https://checkbook.io/docs/api/products/#oauth).
 
 Once you obtain the bearer token for a user, you can use it to send API requests on its behalf:
 

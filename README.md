@@ -12,7 +12,7 @@ Install the package with:
 
 The package needs to be configured with your account's API Key and API Secret.
 
-:key: The API credentials below are from the ```test``` environment and you can use them to try the API.
+:key: The API credentials below are from the ```demo``` environment and you can use them to try the API.
 
 ``` js
 var CheckbookAPI = require('checkbook-api');
@@ -24,7 +24,7 @@ var Checkbook = new CheckbookAPI({
 ```
     
 The ```env``` parameter is optional and can be omitted if the requests are made to the live environment.  
-The possible values for this parameter are ```test``` or ```sandbox``` and the API credentials need to be from the specified environment.
+The possible values for this parameter are ```demo``` or ```sandbox``` and the API credentials need to be from the specified environment.
     
 You can get the API Key and API Secret values from the [Settings](https://checkbook.io/account/settings) page.
 

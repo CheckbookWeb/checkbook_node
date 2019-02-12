@@ -90,31 +90,31 @@ You can click on the :book: icon to access the detailed API reference for each m
 
  * __Checkbook.checks__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-check)
- 	* ```get(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-check-(check_id))
- 	* ```delete(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-check-(check_id))
+ 	* ```get(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-check-check_id)
+ 	* ```delete(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-check-check_id)
  	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-check-digital)
  	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-check-physical)
  	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
  	
  * __Checkbook.invoices__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-invoice)
- 	* ```get(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-invoice-(invoice_id))
-	* ```delete(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-invoice-(invoice_id))
+ 	* ```get(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-invoice-invoice_id)
+	* ```delete(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-invoice-invoice_id)
 	* ```sendInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-invoice)
 	* ```payInvoice(params, callback[, idempotencyKey])```
  	
  * __Checkbook.subscriptions__
  	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-subscription)
-	* ```get(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-subscription-(subscription_id))
-	* ```delete(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-subscription-(subscription_id))
-	* ```update(subscription_id, params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#put--v3-subscription-(subscription_id))
+	* ```get(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-subscription-subscription_id)
+	* ```delete(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-subscription-subscription_id)
+	* ```update(subscription_id, params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#put--v3-subscription-subscription_id)
 	* ```sendRecurringCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-subscription-check)
 	* ```sendRecurringInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-subscription-invoice)
  
  * __Checkbook.banks__
  	* ```list(callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-bank)
  	* ```institutions(callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-bank-institutions)
- 	* ```delete(bank_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-bank-(bank_id))
+ 	* ```delete(bank_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-bank-bank_id)
  	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank-iav)
  	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank)
  	* ```verifyMicrodesposits(params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank-verify)

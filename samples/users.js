@@ -45,3 +45,21 @@ Checkbook.users.update({
     }
 });
 */
+
+
+/*
+ Get the marketplace users
+ https://checkbook.io/docs/api/reference/#get--v3-user-list
+ */
+/*
+Checkbook.users.list({
+    page: 1,
+    per_page: 10
+}, function (error, response) {
+    if (error) {
+        console.log('Error:', error);
+    } else {
+        console.log('Response:', response);
+    }
+});
+*/

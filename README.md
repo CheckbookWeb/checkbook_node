@@ -122,6 +122,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  * __Checkbook.users__
  	* ```create(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-user)
  	* ```update(params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#put--v3-user)
+ 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-user-list)
  
 ---
 

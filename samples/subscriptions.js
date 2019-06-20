@@ -8,7 +8,7 @@ var Checkbook = new CheckbookAPI({
 
 /*
  Return the subscriptions for a user
- https://checkbook.io/docs/api#get--v3-subscription
+ https://docs.checkbook.io/reference#get-subscriptions
  */
 /*
 Checkbook.subscriptions.list({
@@ -26,7 +26,7 @@ Checkbook.subscriptions.list({
 
 /*
  Get the specified subscription for a user
- https://checkbook.io/docs/api#get--v3-subscription-(subscription_id)
+ https://docs.checkbook.io/reference#get-subscription
  */
 /*
 Checkbook.subscriptions.get('23b0943c3a4e4f13a61703f6650ee5cf', function (error, response) {
@@ -41,7 +41,7 @@ Checkbook.subscriptions.get('23b0943c3a4e4f13a61703f6650ee5cf', function (error,
 
 /*
  Remove the specified subscription for a user
- https://checkbook.io/docs/api#delete--v3-subscription-(subscription_id)
+ https://docs.checkbook.io/reference#delete-subscription
  */
 /*
 Checkbook.subscriptions.delete('23b0943c3a4e4f13a61703f6650ee5cf', function (error, response) {
@@ -56,7 +56,7 @@ Checkbook.subscriptions.delete('23b0943c3a4e4f13a61703f6650ee5cf', function (err
 
 /*
  Update the specified subscription for a user
- https://checkbook.io/docs/api#put--v3-subscription-(subscription_id)
+ https://docs.checkbook.io/reference#put-subscription
  */
 /*
 Checkbook.subscriptions.update('906f0a5e9e344839a6f47b3d929c5326', {
@@ -73,7 +73,7 @@ Checkbook.subscriptions.update('906f0a5e9e344839a6f47b3d929c5326', {
 
 /*
  Create a new check subscription
- https://checkbook.io/docs/api#post--v3-subscription-check
+ https://docs.checkbook.io/reference#post-subscription-check
  */
 /*
 Checkbook.subscriptions.sendRecurringCheck({
@@ -94,7 +94,7 @@ Checkbook.subscriptions.sendRecurringCheck({
 
 /*
  Create a new invoice subscription
- https://checkbook.io/docs/api#post--v3-subscription-invoice
+ https://docs.checkbook.io/reference#post-subscription-invoice
  */
 /*
 Checkbook.subscriptions.sendRecurringInvoice({

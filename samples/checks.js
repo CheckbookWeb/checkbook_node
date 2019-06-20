@@ -8,7 +8,7 @@ var Checkbook = new CheckbookAPI({
 
 /*
  Get sent/received checks
- https://checkbook.io/docs/api#get--v3-check
+ https://docs.checkbook.io/reference#get-checks
  */
 /*
 Checkbook.checks.list({
@@ -27,7 +27,7 @@ Checkbook.checks.list({
 
 /*
  Get the specified check
- https://checkbook.io/docs/api#get--v3-check-(check_id)
+ https://docs.checkbook.io/reference#get-check
  */
 /*
 Checkbook.checks.get('222e276dc9b548fda3faa7eacb56c655', function (error, response) {
@@ -42,7 +42,7 @@ Checkbook.checks.get('222e276dc9b548fda3faa7eacb56c655', function (error, respon
 
 /*
  Void the specified check
- https://checkbook.io/docs/api#delete--v3-check-(check_id)
+ https://docs.checkbook.io/reference#delete-check
  */
 /*
 Checkbook.checks.delete('222e276dc9b548fda3faa7eacb56c655', function (error, response) {
@@ -57,7 +57,7 @@ Checkbook.checks.delete('222e276dc9b548fda3faa7eacb56c655', function (error, res
 
 /*
  Create a digital check
- https://checkbook.io/docs/api#post--v3-check-digital
+ https://docs.checkbook.io/reference#post-check-digital
  */
 /*
 Checkbook.checks.sendDigitalCheck({
@@ -77,7 +77,7 @@ Checkbook.checks.sendDigitalCheck({
 
 /*
  Create a digital check (with idempotency key)
- https://checkbook.io/docs/api#post--v3-check-digital
+ https://docs.checkbook.io/reference#post-check-digital
  */
 /*
 Checkbook.checks.sendDigitalCheck({
@@ -97,7 +97,7 @@ Checkbook.checks.sendDigitalCheck({
 
 /*
  Create a physical check
- https://checkbook.io/docs/api#post--v3-check-physical
+ https://docs.checkbook.io/reference#post-check-physical
  */
 /*
 Checkbook.checks.sendPhysicalCheck({

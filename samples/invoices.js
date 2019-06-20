@@ -8,7 +8,7 @@ var Checkbook = new CheckbookAPI({
 
 /*
  Get sent/received invoices
- https://checkbook.io/docs/api#get--v3-invoice
+ https://docs.checkbook.io/reference#get-invoices
  */
 /*
 Checkbook.invoices.list({
@@ -26,7 +26,7 @@ Checkbook.invoices.list({
 
 /*
  Get the specified invoice
- https://checkbook.io/docs/api#get--v3-invoice-(invoice_id)
+ https://docs.checkbook.io/reference#get-invoice
  */
 /*
 Checkbook.invoices.get('929b8b25fc2b4bb5b90ef8c863b363fd', function (error, response) {
@@ -41,7 +41,7 @@ Checkbook.invoices.get('929b8b25fc2b4bb5b90ef8c863b363fd', function (error, resp
 
 /*
  Void the specified invoice
- https://checkbook.io/docs/api#delete--v3-invoice-(invoice_id)
+ https://docs.checkbook.io/reference#delete-invoice
  */
 /*
 Checkbook.invoices.delete('929b8b25fc2b4bb5b90ef8c863b363fd', function (error, response) {
@@ -56,7 +56,7 @@ Checkbook.invoices.delete('929b8b25fc2b4bb5b90ef8c863b363fd', function (error, r
 
 /*
  Create invoice
- https://checkbook.io/docs/api#post--v3-invoice
+ https://docs.checkbook.io/reference#post-invoice
  */
 /*
 Checkbook.invoices.sendInvoice({
@@ -76,7 +76,7 @@ Checkbook.invoices.sendInvoice({
 
 /*
  Create invoice (with idempotency key)
- https://checkbook.io/docs/api#post--v3-invoice
+ https://docs.checkbook.io/reference#post-invoice
  */
 /*
 Checkbook.invoices.sendInvoice({
@@ -96,7 +96,7 @@ Checkbook.invoices.sendInvoice({
 
 /*
  Pay invoice
- https://checkbook.io/docs/api#post--v3-invoice
+ https://docs.checkbook.io/reference#post-invoice-payment
  */
 /*
 Checkbook.invoices.payInvoice({

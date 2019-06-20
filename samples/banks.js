@@ -8,7 +8,7 @@ var Checkbook = new CheckbookAPI({
 
 /*
  Return the bank accounts for a user
- https://checkbook.io/docs/api#get--v3-bank
+ https://docs.checkbook.io/reference#get-banks
  */
 /*
 Checkbook.banks.list(function (error, response) {
@@ -23,7 +23,7 @@ Checkbook.banks.list(function (error, response) {
 
 /*
  Get a list of our supported institutions for IAV (Instant Account Verification)
- https://checkbook.io/docs/api#get--v3-bank-institutions
+ https://docs.checkbook.io/reference#get-bank-institutions
  */
 /*
 Checkbook.banks.institutions(function (error, response) {
@@ -38,7 +38,7 @@ Checkbook.banks.institutions(function (error, response) {
 
 /*
  Remove the specified bank account for a user
- https://checkbook.io/docs/api#delete--v3-bank-(bank_id)
+ https://docs.checkbook.io/reference#delete-bank
  */
 /*
 Checkbook.banks.delete('830166be0f194097b60da1cd5d76a642', function (error, response) {
@@ -53,7 +53,7 @@ Checkbook.banks.delete('830166be0f194097b60da1cd5d76a642', function (error, resp
 
 /*
  Add a new bank account for user
- https://checkbook.io/docs/api#post--v3-bank
+ https://docs.checkbook.io/reference#post-bank
  */
 /*
 Checkbook.banks.addBankAccount({
@@ -73,7 +73,7 @@ Checkbook.banks.addBankAccount({
 
 /*
  Verify the microdeposits for a bank account
- https://checkbook.io/docs/api#post--v3-bank-verify
+ https://docs.checkbook.io/reference#post-bank-verify
  */
 /*
 Checkbook.banks.verifyMicrodesposits({

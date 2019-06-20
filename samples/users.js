@@ -8,7 +8,7 @@ var Checkbook = new CheckbookAPI({
 
 /*
  Create a new user (with idempotency key)
- https://checkbook.io/docs/api#post--v3-user
+ https://docs.checkbook.io/reference#post-user
  */
 /*
 Checkbook.users.create({
@@ -26,7 +26,7 @@ Checkbook.users.create({
 
 /*
  Update a user
- https://checkbook.io/docs/api#put--v3-user
+ https://docs.checkbook.io/reference#put-user
  */
 /*
 Checkbook.users.update({
@@ -49,7 +49,7 @@ Checkbook.users.update({
 
 /*
  Get user information
- https://checkbook.io/docs/api/reference/#get--v3-user
+ https://docs.checkbook.io/reference#get-user
  */
 /*
 Checkbook.users.get(function (error, response) {
@@ -64,7 +64,7 @@ Checkbook.users.get(function (error, response) {
 
 /*
  Get the marketplace users
- https://checkbook.io/docs/api/reference/#get--v3-user-list
+ https://docs.checkbook.io/reference#get-users
  */
 /*
 Checkbook.users.list({

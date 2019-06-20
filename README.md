@@ -32,7 +32,7 @@ You can get the API Key and API Secret values from the [Settings](https://checkb
 
 ## OAuth
 
-If you wish to send requests on behalf of another user, this user will use OAuth in order to generate a key that may be used on their behalf. You can get more details on our [OAuth documentation page](https://checkbook.io/docs/api/products/#oauth).
+If you wish to send requests on behalf of another user, this user will use OAuth in order to generate a key that may be used on their behalf. You can get more details on our [OAuth documentation page](https://docs.checkbook.io/docs/connect-with-oauth).
 
 Once you obtain the bearer token for a user, you can use it to send API requests on its behalf:
 
@@ -89,41 +89,41 @@ The ```Checkbook``` class has several endpoints and you can find below the metho
 You can click on the :book: icon to access the detailed API reference for each method. 
 
  * __Checkbook.checks__
- 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-check)
- 	* ```get(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-check-check_id)
- 	* ```delete(check_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-check-check_id)
- 	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-check-digital)
- 	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-check-physical)
+ 	* ```list(query, callback)``` [:book:](https://docs.checkbook.io/reference#get-checks)
+ 	* ```get(check_id, callback)``` [:book:](https://docs.checkbook.io/reference#get-check)
+ 	* ```delete(check_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-check)
+ 	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-check-digital)
+ 	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-check-physical)
  	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
  	
  * __Checkbook.invoices__
- 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-invoice)
- 	* ```get(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-invoice-invoice_id)
-	* ```delete(invoice_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-invoice-invoice_id)
-	* ```sendInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-invoice)
-	* ```payInvoice(params, callback[, idempotencyKey])```
+ 	* ```list(query, callback)``` [:book:](https://docs.checkbook.io/reference#get-invoices)
+ 	* ```get(invoice_id, callback)``` [:book:](https://docs.checkbook.io/reference#get-invoice)
+	* ```delete(invoice_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-invoice)
+	* ```sendInvoice(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-invoice)
+	* ```payInvoice(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-invoice-payment)
  	
  * __Checkbook.subscriptions__
- 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-subscription)
-	* ```get(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-subscription-subscription_id)
-	* ```delete(subscription_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-subscription-subscription_id)
-	* ```update(subscription_id, params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#put--v3-subscription-subscription_id)
-	* ```sendRecurringCheck(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-subscription-check)
-	* ```sendRecurringInvoice(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-subscription-invoice)
+ 	* ```list(query, callback)``` [:book:](https://docs.checkbook.io/reference#get-subscriptions)
+	* ```get(subscription_id, callback)``` [:book:](https://docs.checkbook.io/reference#get-subscription)
+	* ```delete(subscription_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-subscription)
+	* ```update(subscription_id, params, callback)``` [:book:](https://docs.checkbook.io/reference#put-subscription)
+	* ```sendRecurringCheck(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-subscription-check)
+	* ```sendRecurringInvoice(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-subscription-invoice)
  
  * __Checkbook.banks__
- 	* ```list(callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-bank)
- 	* ```institutions(callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-bank-institutions)
- 	* ```delete(bank_id, callback)``` [:book:](https://checkbook.io/docs/api/reference/#delete--v3-bank-bank_id)
- 	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank-iav)
- 	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank)
- 	* ```verifyMicrodesposits(params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-bank-verify)
+ 	* ```list(callback)``` [:book:](https://docs.checkbook.io/reference#get-banks)
+ 	* ```institutions(callback)``` [:book:](https://docs.checkbook.io/reference#get-bank-institutions)
+ 	* ```delete(bank_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-bank)
+ 	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-bank-iav)
+ 	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-bank)
+ 	* ```verifyMicrodesposits(params, callback)``` [:book:](https://docs.checkbook.io/reference#post-bank-verify)
  	
  * __Checkbook.users__
- 	* ```create(params, callback[, idempotencyKey])``` [:book:](https://checkbook.io/docs/api/reference/#post--v3-user)
- 	* ```update(params, callback)``` [:book:](https://checkbook.io/docs/api/reference/#put--v3-user)
- 	* ```get(callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-user)
- 	* ```list(query, callback)``` [:book:](https://checkbook.io/docs/api/reference/#get--v3-user-list)
+ 	* ```create(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-user)
+ 	* ```update(params, callback)``` [:book:](https://docs.checkbook.io/reference#put-user)
+ 	* ```get(callback)``` [:book:](https://docs.checkbook.io/reference#get-user)
+ 	* ```list(query, callback)``` [:book:](https://docs.checkbook.io/reference#get-users)
  
 ---
 
@@ -146,8 +146,8 @@ If you've instead found a bug in the library or would like new features added, p
 
 ## More Information
 
- * [API Endpoints](https://checkbook.io/docs/api/reference/)
- * [Error Codes](https://checkbook.io/docs/api/products/#error-codes)
- * [Idempotency](https://checkbook.io/docs/api/products/#idempotent-requests)
+ * [API Endpoints](https://docs.checkbook.io/reference)
+ * [Error Codes](https://docs.checkbook.io/reference#error-codes)
+ * [Idempotency](https://docs.checkbook.io/reference#idempotent-requests)
     
     

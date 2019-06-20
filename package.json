@@ -1,6 +1,6 @@
 {
   "name": "checkbook-api",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Node.js library for the Checkbook.io API",
   "keywords": [
     "checkbook",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/CheckbookWeb/checkbook_node#readme",
   "dependencies": {
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "request": "^2.88.0"
   }
 }

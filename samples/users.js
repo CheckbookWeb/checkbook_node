@@ -48,6 +48,21 @@ Checkbook.users.update({
 
 
 /*
+ Get user information
+ https://checkbook.io/docs/api/reference/#get--v3-user
+ */
+/*
+Checkbook.users.get(function (error, response) {
+    if (error) {
+        console.log('Error:', error);
+    } else {
+        console.log('Response:', response);
+    }
+});
+*/
+
+
+/*
  Get the marketplace users
  https://checkbook.io/docs/api/reference/#get--v3-user-list
  */

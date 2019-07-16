@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/CheckbookWeb/checkbook_node#readme",
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.14",
     "request": "^2.88.0"
   }
 }

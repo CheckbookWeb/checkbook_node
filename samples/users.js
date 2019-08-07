@@ -78,3 +78,18 @@ Checkbook.users.list({
     }
 });
 */
+
+
+/*
+ Delete the specified marketplace user
+ https://docs.checkbook.io/reference#delete-user
+ */
+/*
+Checkbook.users.delete('222e276dc9b548fda3faa7eacb56c655', function (error, response) {
+    if (error) {
+        console.log('Error:', error);
+    } else {
+        console.log('Response:', response);
+    }
+});
+*/

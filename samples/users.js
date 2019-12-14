@@ -93,3 +93,20 @@ Checkbook.users.delete('222e276dc9b548fda3faa7eacb56c655', function (error, resp
     }
 });
 */
+
+
+/*
+ Add user signature
+ https://docs.checkbook.io/reference#post-user-signature
+ */
+/*
+Checkbook.users.addSignature({
+    signature: 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII='
+}, function (error, response) {
+    if (error) {
+        console.log('Error:', error);
+    } else {
+        console.log('Response:', response);
+    }
+});
+*/

@@ -125,6 +125,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```get(callback)``` [:book:](https://docs.checkbook.io/reference#get-user)
  	* ```list(query, callback)``` [:book:](https://docs.checkbook.io/reference#get-users)
  	* ```delete(user_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-user)
+ 	* ```addSignature(params, callback)``` [:book:](https://docs.checkbook.io/reference#post-user-signature)
  
 ---
 

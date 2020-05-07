@@ -94,6 +94,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```delete(check_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-check)
  	* ```sendDigitalCheck(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-check-digital)
  	* ```sendPhysicalCheck(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-check-physical)
+ 	* ```sendDirectCheck(params, callback[, idempotencyKey])```
  	* ```sendMultipleChecksCSV(params, callback[, idempotencyKey])```
  	
  * __Checkbook.invoices__

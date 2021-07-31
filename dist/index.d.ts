@@ -1,1 +1,2 @@
-export * from './ts/checkbook';
+import CheckbookAPI from "./ts/checkbook";
+export default CheckbookAPI;

@@ -6,7 +6,7 @@ import { Invoice } from "./endpoints/invoice";
 import { Subscription } from "./endpoints/subscription";
 import { Bank } from "./endpoints/bank";
 import { User } from "./endpoints/User";
-export class Checkbook {
+export default class Checkbook {
   checks: Check;
   resource: Resource;
   invoices: Invoice;

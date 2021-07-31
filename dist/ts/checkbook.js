@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Checkbook = void 0;
 const _ = require("lodash");
 const resource_1 = require("./resource");
 const check_1 = require("./endpoints/check");
@@ -30,5 +29,5 @@ class Checkbook {
         this.users = new User_1.User(this.resource);
     }
 }
-exports.Checkbook = Checkbook;
+exports.default = Checkbook;
 //# sourceMappingURL=checkbook.js.map

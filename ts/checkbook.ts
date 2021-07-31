@@ -1,5 +1,3 @@
-import * as _ from "lodash";
-
 import { Resource } from "./resource";
 import { Check } from "./endpoints/check";
 import { Invoice } from "./endpoints/invoice";
@@ -23,7 +21,7 @@ export default class Checkbook {
     api_key?: string;
     api_secret?: string;
   }) {
-    if (!config.env || !_.includes(["demo", "sandbox"], config.env)) {
+    if (!config.env || !["demo", "sandbox"].includes(config.env)) {
       config.env = "www";
     }
 

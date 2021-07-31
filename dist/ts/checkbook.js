@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _ = require("lodash");
 const resource_1 = require("./resource");
 const check_1 = require("./endpoints/check");
 const invoice_1 = require("./endpoints/invoice");
@@ -9,7 +8,9 @@ const bank_1 = require("./endpoints/bank");
 const User_1 = require("./endpoints/User");
 class Checkbook {
     constructor(config) {
-        if (!config.env || !_.includes(["demo", "sandbox"], config.env)) {
+        if (!config.env ||
+            config.env.indexOf("demo") === -1 ||
+            config.env.indexOf("sandbox") === -1) {
             config.env = "www";
         }
         if (config.bearer) {

@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Resource = void 0;
 const request = require("request");
-const _ = require("lodash");
 class Resource {
     constructor(config) {
         this.baseURI = "https://" + config.env + ".checkbook.io/v3";
@@ -19,15 +18,15 @@ class Resource {
             if (error) {
                 return callback.call(this, error, null);
             }
-            if (!_.includes([200, 201], response.statusCode) || body.error) {
+            if ([200, 201].includes(response.statusCode) || body.error) {
                 error = response.statusCode + " " + body.error;
-                return callback.call(this, error, null);
+                return callback.call(this, error, body);
             }
             return callback.call(this, null, body);
         });
     }
     getRequestOptions(options, idempotencyKey) {
-        _.merge(options, this.defaultOptions);
+        options = Object.assign(Object.assign({}, options), this.defaultOptions);
         if (idempotencyKey) {
             options.headers["Idempotency-Key"] = idempotencyKey;
         }

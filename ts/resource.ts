@@ -1,8 +1,6 @@
 "use strict";
 
 import * as request from 'request';
-import * as _ from 'lodash';
-
 export class Resource {
   private readonly baseURI: string;
   private readonly defaultOptions: {
@@ -28,7 +26,7 @@ export class Resource {
           return callback.call(this, error, null);
         }
 
-        if (!_.includes([200, 201], response.statusCode) || body.error) {
+        if ([200, 201].includes(response.statusCode) || body.error) {
           error = response.statusCode + " " + body.error;
           return callback.call(this, error, body);
         }
@@ -39,7 +37,7 @@ export class Resource {
   }
 
   getRequestOptions(options, idempotencyKey?) {
-    _.merge(options, this.defaultOptions);
+    options = {...options, ...this.defaultOptions};
 
     if (idempotencyKey) {
       options.headers["Idempotency-Key"] = idempotencyKey;

@@ -8,9 +8,7 @@ const bank_1 = require("./endpoints/bank");
 const User_1 = require("./endpoints/User");
 class Checkbook {
     constructor(config) {
-        if (!config.env ||
-            config.env.indexOf("demo") === -1 ||
-            config.env.indexOf("sandbox") === -1) {
+        if (!config.env || !["demo", "sandbox"].includes(config.env)) {
             config.env = "www";
         }
         if (config.bearer) {

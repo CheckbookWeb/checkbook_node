@@ -30,7 +30,7 @@ export class Resource {
 
         if (!_.includes([200, 201], response.statusCode) || body.error) {
           error = response.statusCode + " " + body.error;
-          return callback.call(this, error, null);
+          return callback.call(this, error, body);
         }
 
         return callback.call(this, null, body);

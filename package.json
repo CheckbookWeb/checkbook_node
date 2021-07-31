@@ -9,8 +9,10 @@
     "api",
     "ach"
   ],
-  "main": "lib/checkbook.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "tsc --outDir ./dist",
     "test": "echo \"Error: no tests specified\" && exit 1"
   },
   "author": "Checkbook.io <support@checkbook.io> (https://checkbook.io/)",
@@ -32,5 +34,9 @@
   "dependencies": {
     "lodash": "^4.17.14",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
   }
 }

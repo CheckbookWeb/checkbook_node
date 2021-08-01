@@ -6,6 +6,9 @@ export declare class Bank {
     institutions(callback: (err: any, response: any) => void): void;
     delete(bank_id: any, callback: (err: any, response: any) => void): void;
     instantAccountVerification(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
+    instantAccountVerificationPlaid(params: {
+        processor_token: string;
+    }, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     addBankAccount(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     verifyMicrodesposits(params: any, callback: (err: any, response: any) => void): void;
 }

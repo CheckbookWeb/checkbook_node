@@ -37,6 +37,14 @@ export class Bank {
         }, callback, idempotencyKey);
     }
 
+    instantAccountVerificationPlaid(params: { processor_token: string }, callback: (err, response) => void, idempotencyKey?) {
+        return this.resource.request({
+            method: 'POST',
+            uri: '/bank/iav/plaid',
+            body: params
+        }, callback, idempotencyKey);
+    }
+
     addBankAccount(params, callback: (err, response) => void, idempotencyKey?) {
         return this.resource.request({
             method: 'POST',

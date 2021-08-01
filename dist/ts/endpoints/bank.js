@@ -30,6 +30,13 @@ class Bank {
             body: params
         }, callback, idempotencyKey);
     }
+    instantAccountVerificationPlaid(params, callback, idempotencyKey) {
+        return this.resource.request({
+            method: 'POST',
+            uri: '/bank/iav/plaid',
+            body: params
+        }, callback, idempotencyKey);
+    }
     addBankAccount(params, callback, idempotencyKey) {
         return this.resource.request({
             method: 'POST',

@@ -8,7 +8,7 @@ export class User {
         
     }
 
-    create(params, callback, idempotencyKey) {
+    create(params, callback, idempotencyKey?) {
         return this.resource.request({
             method: 'POST',
             uri: '/user',

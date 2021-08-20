@@ -1,7 +1,7 @@
 {
-  "name": "checkbook-api",
-  "version": "3.2.4",
-  "description": "Node.js library for the Checkbook.io API",
+  "name": "checkbook-api-ts",
+  "version": "1.0.0",
+  "description": "Node.js library for the Checkbook.io API in TS",
   "keywords": [
     "checkbook",
     "digital checks",
@@ -17,11 +17,12 @@
   },
   "author": "Checkbook.io <support@checkbook.io> (https://checkbook.io/)",
   "contributors": [
-    "Cosmin Molea <cmolea@checkbook.io>"
+    "Cosmin Molea <cmolea@checkbook.io>",
+    "Dan Shapir <dan@precise.credit>"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CheckbookWeb/checkbook_node.git"
+    "url": "git+https://github.com/Precise-Finance/checkbook_node.git"
   },
   "license": "MIT",
   "bugs": {

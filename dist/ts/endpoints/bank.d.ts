@@ -11,4 +11,5 @@ export declare class Bank {
     }, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     addBankAccount(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     verifyMicrodesposits(params: any, callback: (err: any, response: any) => void): void;
+    update(bank_id: any, params: any, callback: (err: any, response: any) => void): void;
 }

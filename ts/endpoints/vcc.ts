@@ -7,7 +7,9 @@ export class VirtualCreditCard {
   constructor(private readonly resource: Resource) {}
 
   add(
-    params: { line_1: string; city: string; state: string; zip: string },
+    params: {
+      address: { line_1: string; city: string; state: string; zip: string };
+    },
     callback: (err, response) => void,
     idempotencyKey?: string
   ) {
@@ -24,7 +26,7 @@ export class VirtualCreditCard {
 
   update(
     vcc_id: string,
-    params: { name?: string; default: true },
+    params: { name?: string; default?: boolean },
     callback: (err, response) => void
   ) {
     return this.resource.request(

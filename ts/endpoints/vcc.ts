@@ -32,7 +32,7 @@ export class VirtualCreditCard {
     return this.resource.request(
       {
         method: "PUT",
-        uri: "/account/vcc" + vcc_id,
+        uri: "/account/vcc/" + vcc_id,
         body: params,
       },
       callback
@@ -53,7 +53,7 @@ export class VirtualCreditCard {
     return this.resource.request(
       {
         method: "GET",
-        uri: "/account/vcc" + vcc_id + "/transaction",
+        uri: "/account/vcc/" + vcc_id + "/transaction",
       },
       callback
     );

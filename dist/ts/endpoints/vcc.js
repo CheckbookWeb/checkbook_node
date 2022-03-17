@@ -15,7 +15,7 @@ class VirtualCreditCard {
     update(vcc_id, params, callback) {
         return this.resource.request({
             method: "PUT",
-            uri: "/account/vcc" + vcc_id,
+            uri: "/account/vcc/" + vcc_id,
             body: params,
         }, callback);
     }
@@ -28,7 +28,7 @@ class VirtualCreditCard {
     getTransactions(vcc_id, callback) {
         return this.resource.request({
             method: "GET",
-            uri: "/account/vcc" + vcc_id + "/transaction",
+            uri: "/account/vcc/" + vcc_id + "/transaction",
         }, callback);
     }
     remove(vcc_id, callback) {

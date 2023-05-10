@@ -80,6 +80,16 @@ export class Bank {
     );
   }
 
+  releaseMicrodesposits(params, callback: (err, response) => void) {
+    return this.resource.request(
+      {
+        method: "POST",
+        uri: "/bank/release",
+        body: params,
+      },
+      callback
+    );
+  }
   verifyMicrodesposits(params, callback: (err, response) => void) {
     return this.resource.request(
       {

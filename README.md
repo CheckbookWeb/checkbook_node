@@ -118,6 +118,7 @@ You can click on the :book: icon to access the detailed API reference for each m
  	* ```delete(bank_id, callback)``` [:book:](https://docs.checkbook.io/reference#delete-bank)
  	* ```instantAccountVerification(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-bank-iav)
  	* ```addBankAccount(params, callback[, idempotencyKey])``` [:book:](https://docs.checkbook.io/reference#post-bank)
+ 	* ```releaseMicrodesposits(params, callback)``` [:book:](https://docs.checkbook.io/reference#post-bank-release)
  	* ```verifyMicrodesposits(params, callback)``` [:book:](https://docs.checkbook.io/reference#post-bank-verify)
  	
  * __Checkbook.users__

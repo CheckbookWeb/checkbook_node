@@ -44,14 +44,14 @@ class Bank {
             body: params,
         }, callback, idempotencyKey);
     }
-    releaseMicrodesposits(params, callback) {
+    releaseMicrodeposits(params, callback) {
         return this.resource.request({
             method: "POST",
             uri: "/bank/release",
             body: params,
         }, callback);
     }
-    verifyMicrodesposits(params, callback) {
+    verifyMicrodeposits(params, callback) {
         return this.resource.request({
             method: "POST",
             uri: "/bank/verify",

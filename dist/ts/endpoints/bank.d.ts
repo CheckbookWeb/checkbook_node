@@ -10,7 +10,7 @@ export declare class Bank {
         processor_token: string;
     }, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     addBankAccount(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
-    releaseMicrodesposits(params: any, callback: (err: any, response: any) => void): void;
-    verifyMicrodesposits(params: any, callback: (err: any, response: any) => void): void;
+    releaseMicrodeposits(params: any, callback: (err: any, response: any) => void): void;
+    verifyMicrodeposits(params: any, callback: (err: any, response: any) => void): void;
     update(bank_id: any, params: any, callback: (err: any, response: any) => void): void;
 }

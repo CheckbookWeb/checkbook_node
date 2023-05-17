@@ -80,7 +80,7 @@ export class Bank {
     );
   }
 
-  releaseMicrodesposits(params, callback: (err, response) => void) {
+  releaseMicrodeposits(params, callback: (err, response) => void) {
     return this.resource.request(
       {
         method: "POST",
@@ -90,7 +90,7 @@ export class Bank {
       callback
     );
   }
-  verifyMicrodesposits(params, callback: (err, response) => void) {
+  verifyMicrodeposits(params, callback: (err, response) => void) {
     return this.resource.request(
       {
         method: "POST",

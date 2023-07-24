@@ -20,7 +20,7 @@ class Resource {
             }
             if (![200, 201].includes(response.statusCode) || body.error) {
                 error = response.statusCode + " " + body.error;
-                return callback.call(this, error, body);
+                return callback.call(this, error, response);
             }
             return callback.call(this, null, body);
         });

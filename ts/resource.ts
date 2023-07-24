@@ -1,6 +1,6 @@
 "use strict";
 
-import * as request from 'request';
+import * as request from "request";
 export class Resource {
   private readonly baseURI: string;
   private readonly defaultOptions: {
@@ -28,7 +28,7 @@ export class Resource {
 
         if (![200, 201].includes(response.statusCode) || body.error) {
           error = response.statusCode + " " + body.error;
-          return callback.call(this, error, body);
+          return callback.call(this, error, response);
         }
 
         return callback.call(this, null, body);
@@ -37,7 +37,7 @@ export class Resource {
   }
 
   getRequestOptions(options, idempotencyKey?) {
-    options = {...options, ...this.defaultOptions};
+    options = { ...options, ...this.defaultOptions };
 
     if (idempotencyKey) {
       options.headers["Idempotency-Key"] = idempotencyKey;

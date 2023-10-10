@@ -5,8 +5,9 @@ const check_1 = require("./endpoints/check");
 const invoice_1 = require("./endpoints/invoice");
 const subscription_1 = require("./endpoints/subscription");
 const bank_1 = require("./endpoints/bank");
-const User_1 = require("./endpoints/User");
+const user_1 = require("./endpoints/user");
 const vcc_1 = require("./endpoints/vcc");
+const wallet_1 = require("./endpoints/wallet");
 class Checkbook {
     constructor(config) {
         if (!config.env || !["demo", "sandbox"].includes(config.env)) {
@@ -26,8 +27,9 @@ class Checkbook {
         this.invoices = new invoice_1.Invoice(this.resource);
         this.subscriptions = new subscription_1.Subscription(this.resource);
         this.banks = new bank_1.Bank(this.resource);
-        this.users = new User_1.User(this.resource);
+        this.users = new user_1.User(this.resource);
         this.virtualCreditCards = new vcc_1.VirtualCreditCard(this.resource);
+        this.wallet = new wallet_1.Wallet(this.resource);
     }
 }
 exports.default = Checkbook;

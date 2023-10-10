@@ -8,60 +8,60 @@ class Bank {
     list(callback) {
         return this.resource.request({
             method: "GET",
-            uri: "/bank",
+            uri: "/account/bank",
         }, callback);
     }
     institutions(callback) {
         return this.resource.request({
             method: "GET",
-            uri: "/bank/institutions",
+            uri: "/account/bank/institutions",
         }, callback);
     }
     delete(bank_id, callback) {
         return this.resource.request({
             method: "DELETE",
-            uri: "/bank/" + bank_id,
+            uri: "/account/bank/" + bank_id,
         }, callback);
     }
     instantAccountVerification(params, callback, idempotencyKey) {
         return this.resource.request({
             method: "POST",
-            uri: "/bank/iav",
+            uri: "/account/bank/iav",
             body: params,
         }, callback, idempotencyKey);
     }
     instantAccountVerificationPlaid(params, callback, idempotencyKey) {
         return this.resource.request({
             method: "POST",
-            uri: "/bank/iav/plaid",
+            uri: "/account/bank/iav/plaid",
             body: params,
         }, callback, idempotencyKey);
     }
     addBankAccount(params, callback, idempotencyKey) {
         return this.resource.request({
             method: "POST",
-            uri: "/bank",
+            uri: "/account/bank",
             body: params,
         }, callback, idempotencyKey);
     }
     releaseMicrodeposits(params, callback) {
         return this.resource.request({
             method: "POST",
-            uri: "/bank/release",
+            uri: "/account/bank/release",
             body: params,
         }, callback);
     }
     verifyMicrodeposits(params, callback) {
         return this.resource.request({
             method: "POST",
-            uri: "/bank/verify",
+            uri: "/account/bank/verify",
             body: params,
         }, callback);
     }
     update(bank_id, params, callback) {
         return this.resource.request({
             method: "PUT",
-            uri: "/bank/" + bank_id,
+            uri: "/account/bank/" + bank_id,
             body: params,
         }, callback);
     }

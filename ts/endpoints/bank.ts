@@ -10,7 +10,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "GET",
-        uri: "/bank",
+        uri: "/account/bank",
       },
       callback
     );
@@ -20,7 +20,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "GET",
-        uri: "/bank/institutions",
+        uri: "/account/bank/institutions",
       },
       callback
     );
@@ -30,7 +30,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "DELETE",
-        uri: "/bank/" + bank_id,
+        uri: "/account/bank/" + bank_id,
       },
       callback
     );
@@ -44,7 +44,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "POST",
-        uri: "/bank/iav",
+        uri: "/account/bank/iav",
         body: params,
       },
       callback,
@@ -60,7 +60,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "POST",
-        uri: "/bank/iav/plaid",
+        uri: "/account/bank/iav/plaid",
         body: params,
       },
       callback,
@@ -72,7 +72,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "POST",
-        uri: "/bank",
+        uri: "/account/bank",
         body: params,
       },
       callback,
@@ -84,7 +84,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "POST",
-        uri: "/bank/release",
+        uri: "/account/bank/release",
         body: params,
       },
       callback
@@ -94,7 +94,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "POST",
-        uri: "/bank/verify",
+        uri: "/account/bank/verify",
         body: params,
       },
       callback
@@ -105,7 +105,7 @@ export class Bank {
     return this.resource.request(
       {
         method: "PUT",
-        uri: "/bank/" + bank_id,
+        uri: "/account/bank/" + bank_id,
         body: params,
       },
       callback

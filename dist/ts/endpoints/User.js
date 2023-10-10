@@ -47,4 +47,4 @@ class User {
     }
 }
 exports.User = User;
-//# sourceMappingURL=User.js.map
+//# sourceMappingURL=user.js.map

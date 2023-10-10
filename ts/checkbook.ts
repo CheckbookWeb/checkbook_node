@@ -3,8 +3,9 @@ import { Check } from "./endpoints/check";
 import { Invoice } from "./endpoints/invoice";
 import { Subscription } from "./endpoints/subscription";
 import { Bank } from "./endpoints/bank";
-import { User } from "./endpoints/User";
+import { User } from "./endpoints/user";
 import { VirtualCreditCard } from "./endpoints/vcc";
+import { Wallet } from "./endpoints/wallet";
 export default class Checkbook {
   checks: Check;
   resource: Resource;
@@ -13,6 +14,7 @@ export default class Checkbook {
   banks: Bank;
   users: User;
   virtualCreditCards: VirtualCreditCard;
+  wallet: Wallet;
   /**
    *
    */
@@ -43,5 +45,6 @@ export default class Checkbook {
     this.banks = new Bank(this.resource);
     this.users = new User(this.resource);
     this.virtualCreditCards = new VirtualCreditCard(this.resource);
+    this.wallet = new Wallet(this.resource);
   }
 }

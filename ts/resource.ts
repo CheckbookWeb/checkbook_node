@@ -44,7 +44,7 @@ export class Resource {
     }
 
     options.uri = this.baseURI + options.uri;
-
+    
     return options;
   }
 }

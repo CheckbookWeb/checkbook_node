@@ -5,6 +5,9 @@ export declare class Check {
     list(query: any, callback: (err: any, response: any) => void): void;
     get(check_id: any, callback: (err: any, response: any) => void): void;
     delete(check_id: any, callback: (err: any, response: any) => void): void;
+    deposit(check_id: string, params: {
+        account: string;
+    }, callback: (err: any, response: any) => void): void;
     sendDigitalCheck(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     sendPhysicalCheck(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;
     sendDirectCheck(params: any, callback: (err: any, response: any) => void, idempotencyKey?: any): void;

@@ -1,6 +1,6 @@
 {
   "name": "checkbook-api-ts",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Node.js library for the Checkbook.io API in TS",
   "keywords": [
     "checkbook",

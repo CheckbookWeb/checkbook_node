@@ -62,3 +62,7 @@ typings/
 
 # IDE
 .idea
+
+
+.history
+.DS_Store

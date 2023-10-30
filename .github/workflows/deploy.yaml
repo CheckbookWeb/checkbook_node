@@ -1,0 +1,32 @@
+name: Continue Deployment after Approval
+
+on:
+  repository_dispatch:
+    types: [deployment-approved]
+
+jobs:
+  post_approval_prod:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to environment
+      run: |
+        echo "Deploying to ${{ github.event.client_payload.env }}"
+    
+    - name: Deploy commit
+      run: |
+        echo "Deploying commit ${{ github.event.client_payload.sha }}"
+    - name: Checkout Helm repo at specific SHA
+      uses: actions/checkout@v4
+      with:
+        repository: Precise-Finance/charts
+        path: helm-repo
+        ref: ${{ github.event.client_payload.sha }}
+        token: ${{ secrets.GH_SECRET }}
+
+
+    - name: Tag with SHA and ENV
+      run: |
+        cd helm-repo
+        git tag ${{ github.event.client_payload.env }}-${{ github.event.repository.name }}
+        git push origin refs/tags/${{ github.event.client_payload.env }}-${{ github.event.repository.name }} -f --tags
+

@@ -76,7 +76,7 @@ Checkbook.banks.addBankAccount({
  https://docs.checkbook.io/reference#post-bank-verify
  */
 /*
-Checkbook.banks.verifyMicrodesposits({
+Checkbook.banks.verifyMicrodeposits({
     amount_1: 0.07,
     amount_2: 0.15
 }, function (error, response) {
